@@ -1,0 +1,35 @@
+{
+    "en": {
+      "emptyEmail" : "Please enter email",
+      "emptyPassword" : "Please enter password",
+      "emailExist":"Email Already exist",
+      "userNotFound" : "User is not found",
+      "passwordNotmatch" : "Password not match",
+      "successSignup": "User successfully registred",
+      "successSignin": "User successfully loggedin",
+      "errorUpdate" : "Error occurred while updating",
+      "successUpdate" : "successfully updated",
+      "successDetails" : "successfull!!",
+      "failureDetails": "Error in fetching details",
+      "failureInsert" : "Erorr while inserting",
+      "confirmPasswordNotMatch": "Password and Confirm Password doesn't match",
+      "failureRemove" : "Erorr while removing",
+      "failureRemoveFile" : "Erorr while removing file",
+      "failureUpload" : "Erorr while uploading file",
+      "emptyFile": "File should not be empty",
+      "s3Url" : "error while getting s3 url",
+      "emailSuccess" : "Password successfully sent to your registed email",
+      "emailFailure" : "Failed in sending mail",
+      "incorrectEmail" : "Not matching with registerd email",
+      "otpEmail" : "OTP successfully sent to your registerd email address",
+      "invalidOtp" : "Entered One Time  Password is invalid.",
+      "noDataFound" : "No data found",
+      "passwordChangeSuccess": "Password changed successfully",
+      "passwordChangeError": "Error occurred while changing password",
+      "required" : "All fields are required"
+    },
+    "hn": {
+      
+    }
+  }
+  
