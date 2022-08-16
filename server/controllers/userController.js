@@ -2,7 +2,7 @@ import UserModel from '../models/User.js'
 import bcrypt from 'bcrypt'
 import jwt from 'jsonwebtoken'
 import transporter from '../config/emailConfig.js'
-const lang = require("../config/language.json");
+import lang from "../config/language.json" assert {type: "json"};;
 class UserController {
   static userRegistration = async (req, res) => {
     const { name, email, password, password_confirmation, tc } = req.body
