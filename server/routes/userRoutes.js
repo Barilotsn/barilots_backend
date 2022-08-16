@@ -5,8 +5,8 @@ import checkUserAuth from '../middlewares/auth-middleware.js';
 
 
 // Public Routes
-router.post('/register',checkUserAuth, UserController.userRegistration)
-router.post('/login',checkUserAuth, UserController.userLogin)
+router.post('/register', UserController.userRegistration)
+router.post('/login', UserController.userLogin)
 router.post('/send-reset-password-email',checkUserAuth, UserController.sendUserPasswordResetEmail)
 router.post('/reset-password/:id/:token',checkUserAuth, UserController.userPasswordReset)
 
