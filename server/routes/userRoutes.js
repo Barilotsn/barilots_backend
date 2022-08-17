@@ -1,18 +1,18 @@
-import express from 'express';
+const  express  = require('express');
 const router = express.Router();
-import UserController from '../controllers/userController.js';
-import checkUserAuth from '../middlewares/auth-middleware.js';
+const UserController =  require('../controllers/userController');
+const checkUserAuth = require('../middlewares/auth-middleware');
 
 
 // Public Routes
 router.post('/register', UserController.userRegistration)
 router.post('/login', UserController.userLogin)
-router.post('/send-reset-password-email',checkUserAuth, UserController.sendUserPasswordResetEmail)
-router.post('/reset-password/:id/:token',checkUserAuth, UserController.userPasswordReset)
 
 // Protected Routes
+router.post('/send-reset-password-email',checkUserAuth, UserController.sendUserPasswordResetEmail)
+router.post('/reset-password/:id/:token',checkUserAuth, UserController.userPasswordReset)
 router.post('/changepassword',checkUserAuth, UserController.changeUserPassword)
 router.get('/loggeduser',checkUserAuth, UserController.loggedUser)
 
 
-export default router
+module.exports = router;

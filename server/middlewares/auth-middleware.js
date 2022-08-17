@@ -1,5 +1,5 @@
-import jwt from 'jsonwebtoken'
-import UserModel from '../models/User.js'
+const jwt = require('jsonwebtoken');
+const UserModel = require('../models/User');
 
 var checkUserAuth = async (req, res, next) => {
   let token
@@ -18,12 +18,12 @@ var checkUserAuth = async (req, res, next) => {
       next()
     } catch (error) {
       console.log(error)
-      res.status(200).send({ "status": false, "message": "Unauthorized User" })
+      res.status(200).send({ status: false, msg: "Unauthorized User" })
     }
   }
   if (!token) {
-    res.status(401).send({ "status": "failed", "message": "Unauthorized User, No Token" })
+    res.status(401).send({ status:false, msg: "Unauthorized User, No Token" })
   }
 }
 
-export default checkUserAuth
+module.exports = checkUserAuth
