@@ -34,6 +34,7 @@ const userSchema = new mongoose.Schema({
   phoneno: {
     type: String,
     trim: true,
+    required:false,
     validate: {
       validator: validator.isMobilePhone,
       message: "{VALUE} is not a valid mobile number",
@@ -159,7 +160,7 @@ userSchema.methods.generateJWT = function(){
 };
 
 userSchema.index({ email: 1,is_deleted: 1,deletedAt:1}, { unique: true });
-//userSchema.index({ phoneno: 1,is_deleted: 1,deletedAt:1}, { unique: true ,partialFilterExpression: { phoneno: { $exists: true } }});
+userSchema.index({ phoneno: 1,is_deleted: 1,deletedAt:1}, { unique: true ,partialFilterExpression: { phoneno: { $exists: true } }});
 userSchema.set('toJSON', { getters: true });
 // Model
 mongoose.model("User", userSchema);

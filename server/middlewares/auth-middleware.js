@@ -1,5 +1,6 @@
 const jwt = require('jsonwebtoken');
-const UserModel = require('../models/User');
+const mongoose= require('mongoose');
+const UserModel = mongoose.model('User');
 
 var checkUserAuth = async (req, res, next) => {
   let token

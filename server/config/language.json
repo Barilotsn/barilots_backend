@@ -3,6 +3,7 @@
       "emptyEmail" : "Please enter email",
       "emptyPassword" : "Please enter password",
       "emailExist":"Email Already exist",
+      "emailNotExist" : "Email doesn't exists",
       "userNotFound" : "User is not found",
       "passwordNotmatch" : "Password not match",
       "successSignup": "User successfully registred",
@@ -23,10 +24,14 @@
       "incorrectEmail" : "Not matching with registerd email",
       "otpEmail" : "OTP successfully sent to your registerd email address",
       "invalidOtp" : "Entered One Time  Password is invalid.",
+      "expiredOTP" : "Your OTP is expired.",
+      "otpVerified" : "OTP verify successfull.",
       "noDataFound" : "No data found",
       "passwordChangeSuccess": "Password changed successfully",
       "passwordChangeError": "Error occurred while changing password",
-      "required" : "All fields are required"
+      "required" : "All fields are required",
+      "notVerified" : "User is not verified!",
+      "forgotPasswordLink" : "Password Reset Email Sent... Please Check Your Email"
     },
     "hn": {
       
